@@ -1,0 +1,92 @@
+##############################
+# 1️⃣ Gradle
+##############################
+
+.gradle/
+build/
+*/build/
+
+# Gradle Wrapper (必须提交 jar 和 properties)
+!gradle-wrapper.jar
+!gradle-wrapper.properties
+
+
+##############################
+# 2️⃣ Local configuration
+##############################
+
+local.properties
+*.keystore
+*.jks
+*.p12
+*.pem
+
+# signing config
+key.properties
+
+
+##############################
+# 3️⃣ Android Studio / IntelliJ
+##############################
+
+*.iml
+.idea/
+
+# 如果团队需要共享 code style，可放开：
+#!.idea/codeStyles/
+#!.idea/inspectionProfiles/
+
+##############################
+# 4️⃣ OS 生成文件
+##############################
+
+.DS_Store
+Thumbs.db
+
+
+##############################
+# 5️⃣ Log & temp
+##############################
+
+*.log
+captures/
+
+
+##############################
+# 6️⃣ Native build
+##############################
+
+.externalNativeBuild/
+.cxx/
+
+
+##############################
+# 7️⃣ Kotlin / Java
+##############################
+
+*.class
+out/
+
+
+##############################
+# 8️⃣ Generated files
+##############################
+
+.generated/
+app/release/
+app/debug/
+
+
+##############################
+# 9️⃣ Firebase / Google services
+##############################
+
+google-services.json
+google-services-dev.json
+google-services-prod.json
+
+##############################
+# 🔟 Proguard mapping (可选)
+##############################
+
+mapping.txt
