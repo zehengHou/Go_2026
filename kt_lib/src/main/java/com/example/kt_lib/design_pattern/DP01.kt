@@ -1,6 +1,6 @@
 package com.example.kt_lib.design_pattern
 
-import com.example.untils.Logger
+import com.example.utils.Logger
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
