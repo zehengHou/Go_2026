@@ -21,5 +21,8 @@ dependencyResolutionManagement {
 
 rootProject.name = "Go_2026"
 include(":app")
+include(":domain")
+include(":data")
 include(":kt_lib")
-include(":untils")
+include(":utils")
+include(":android_utils")
