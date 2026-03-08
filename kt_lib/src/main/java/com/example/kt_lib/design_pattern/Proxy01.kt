@@ -1,7 +1,5 @@
 package com.example.kt_lib.design_pattern
 
-import kotlin.math.log
-
 interface LoginService {
     fun login()
 }
