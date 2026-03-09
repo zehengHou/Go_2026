@@ -18,6 +18,10 @@ fun main() {
     }
 }
 
+object EnvConfig {
+    val baseUrl: String = "https://api.xxx.com"
+}
+
 class SingletonInstance {
     companion object {
         @Volatile
@@ -31,5 +35,25 @@ class SingletonInstance {
             }
         }
     }
-
 }
+
+class Singleton private constructor() {
+
+    companion object {
+        fun getInstance() = Holder.instance
+    }
+
+    private object Holder {
+        val instance = Singleton()
+    }
+}
+
+
+class Repo private constructor() {
+    companion object {
+        val instance: Repo by lazy(LazyThreadSafetyMode.SYNCHRONIZED) {
+            Repo()
+        }
+    }
+}
+
