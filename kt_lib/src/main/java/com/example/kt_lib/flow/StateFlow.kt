@@ -12,11 +12,11 @@ suspend fun main() {
         mutableStateFlow.value = it + 1
     }
 
-    mutableStateFlow.collect {
-        Logger.print(it)
-    }
-
-//    mutableStateFlow.collectLatest {
+//    mutableStateFlow.collect {
 //        Logger.print(it)
 //    }
+
+    mutableStateFlow.collectLatest {
+        Logger.print(it)
+    }
 }
