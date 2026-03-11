@@ -6,7 +6,7 @@ import java.util.Locale
 
 // Pure JVM Logger (no Android dependencies)
 object Logger {
-    fun print(message: String) {
+    fun print(message: Any) {
         val time = SimpleDateFormat("HH:mm:ss.SSS", Locale.getDefault()).format(Date())
 
         val stackTrace = Throwable().stackTrace
